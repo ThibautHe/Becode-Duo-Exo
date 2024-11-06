@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+nav {
+  background-color: red;
+  padding: 50px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .searchbar {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-radius: 15px;
+  background-color: aqua;
+  overflow: hidden;
+}
+main .searchbar input {
+  height: 100%;
+  background-color: rgb(24, 23, 23);
+  border: none;
+  display: block;
+}
+main button {
+  display: block;
+  height: 100%;
+  padding: 0 25px;
+  border: none;
+  background-color: red;
+}/*# sourceMappingURL=index.css.map */
