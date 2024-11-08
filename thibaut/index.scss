@@ -4,13 +4,20 @@
   box-sizing: border-box;
 }
 
+body
+{
+  background-color: rgba(25, 27, 32, 1);
+}
+
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav {
   background-color: red;
   padding: 50px;
+  margin-bottom: 50px;
 
   .container {
     display: flex;
@@ -29,24 +36,23 @@ nav {
 }
 
 main {
-  .container {
+
+  .search{
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   .searchbar {
-    height: 50px;
+    width: fit-content;
+    height: 40px;
     margin: 0;
     padding: 0;
     display: flex;
     border-radius: 15px;
-    background-color: aqua;
     overflow: hidden;
 
     input {
       height: 100%;
-      background-color: rgb(24, 23, 23);
       border: none;
       display: block;
     }
@@ -58,5 +64,54 @@ main {
     padding: 0 25px;
     border: none;
     background-color: red;
+  }
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pics{
+  position: relative;
+}
+.swiper-button-prev
+{
+left: -5%;
+}
+.swiper-button-next
+{
+left: 103%;
+}
+
+.genre-menu
+{
+  ul{
+    display: flex;
+    gap: 15px;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: white;
   }
 }

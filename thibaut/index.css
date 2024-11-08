@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 27, 32);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: red;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+main .search {
+  display: flex;
+  justify-content: center;
+}
+main .searchbar {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+}
+main .searchbar input {
+  height: 100%;
+  border: none;
+  display: block;
+}
+main button {
+  display: block;
+  height: 100%;
+  padding: 0 25px;
+  border: none;
+  background-color: red;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pics {
+  position: relative;
+}
+
+.swiper-button-prev {
+  left: -5%;
+}
+
+.swiper-button-next {
+  left: 103%;
+}
+
+.genre-menu ul {
+  display: flex;
+  gap: 15px;
+}
+.genre-menu li {
+  list-style: none;
+}
+.genre-menu a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

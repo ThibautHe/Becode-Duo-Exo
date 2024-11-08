@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href=""><h1>bemovies</h1></a>
+        <ul>
+          <li><a href="">search</a></li>
+          <li><a href="">latest</a></li>
+          <li><a href="">genres</a></li>
+          <li><a href="">register</a></li>
+          <li><a href="">login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="search">
+          <div class="searchbar">
+            <input type="text" />
+            <button>-></button>
+          </div>
+        </div>
+        <div class="results">
+          <h1>results for "<span class="search-result"></span>"</h1>
+          <div class="pics">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-result-next swiper-button-next"></div>
+            <div class="swiper-button-result-prev swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="latest-releases">
+          <h1>latest release</h1>
+          <div class="pics">
+            <div class="swiper mySwiper-latest">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next-latest swiper-button-next"></div>
+            <div class="swiper-button-prev-latest swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="genres">
+          <div class="genre-menu">
+            <h1>movies by genre</h1>
+            <ul>
+              <li><a href="">Comedy</a></li>
+              <li><a href="">Drama</a></li>
+              <li><a href="">Action</a></li>
+              <li><a href="">Romance</a></li>
+              <li><a href="">Fantasy</a></li>
+              <li><a href="">Animation</a></li>
+            </ul>
+          </div>
+          <div class="content">
+            <h1>title</h1>
+            <div class="pics">
+              <div class="swiper mySwiper-genre">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Rectangle 2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next-genre swiper-button-next"></div>
+              <div class="swiper-button-prev-genre swiper-button-prev"></div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-result-next",
+          prevEl: ".swiper-button-result-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper-latest", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next-latest",
+          prevEl: ".swiper-button-prev-latest",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper-genre", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next-genre",
+          prevEl: ".swiper-button-prev-genre",
+        },
+      });
+    </script>
+  </body>
+</html>
