@@ -1,49 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-  <body>
-    <nav>
-      <div class="container">
-        <a href=""><h1>bemovies</h1></a>
-        <ul>
-          <li><a href="">search</a></li>
-          <li><a href="">latest</a></li>
-          <li><a href="">genres</a></li>
-          <li><a href="">register</a></li>
-          <li><a href="">login</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div class="container">
-        <div class="searchbar">
-          <input type="text" />
-          <button>-></button>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+
+    <!-- TOP CONTAINER-->
+    <div class="top-container">
+        <div class="title">
+            <h1><span>BE</span>MOVIES</h1>
         </div>
-      </div>
-      <div class="latest-releases"></div>
-      <div class="genres">
-        <div class="genre-menu">
-          <h1>movies by genre</h1>
-          <ul>
-            <li><a href="">Comedy</a></li>
-            <li><a href="">Drama</a></li>
-            <li><a href="">Action</a></li>
-            <li><a href="">Romance</a></li>
-            <li><a href="">Fantasy</a></li>
-            <li><a href="">Animation</a></li>
-          </ul>
+        <div class="menu">
+            <ul class="list">
+                <li>SEARCH</li>
+                <li>LATEST</li>
+                <li>GENRES</li>
+                <li>REGISTER</li>
+                <li>SIGN IN</li>
+            </ul>
         </div>
-        <div class="content">
-          <h1>title</h1>
+    </div>
+    <!-- TOP CONTAINER END-->
+
+
+    <!--BOUTON RECHERCHE-->
+    <div class="movieSearch">
+        <input type="text" placeholder="Interstellar, ..." id="moviesInput" class="search">
+        <button class="search" id="boutonRecherche"></button>
+    </div>
+    <!--BOUTON RECHERCHE END-->
+
+
+
+    <!--RESULTAT DE RECHERCHE: SWIPER-->
+    <div class="swiper-container swiper-container-results">
+        <h1 class ="textAfterInput"></h1>
+        <div class="swiper-wrapper swiper-wrapper-results"></div>
+        <button class="swiper-button-next"></button>
+        <button class="swiper-button-prev"></button>
+    </div>
+    <!-- RESULTAT DE RECHERCHE: SWIPER END-->
+
+
+    <!--LATEST RELEASES : SWIPER -->
+    <div class="swiper-container swiper-container-latest">
+        <h1 class ="textLatestReleases">Latest releases</h1>
+        <div class="swiper-wrapper swiper-wrapper-latest"></div>
+        <button class="swiper-button-next"></button>
+        <button class="swiper-button-prev"></button>
+
+    </div>
+    <!-- LATEST RELEASES : SWIPER END-->
+    
+
+
+    <!--MOVIES BY GENRE : SWIPER-->
+    <div class="moviesByGenre">
+        <p>Movies by genre</p>
+        <div class="tabs">
+            <button class="tab active">Comedy</button>
+            <button class="tab">Drama</button>
+            <button class="tab">Action</button>
+            <button class="tab">Romance</button>
+            <button class="tab">Fantasy</button>
+            <button class="tab">Animation</button>
         </div>
-      </div>
-    </main>
-    <script src="./index.js"></script>
-  </body>
+        <div class="swiper-container swiper-container-genre">
+            <div class="swiper-wrapper swiper-wrapper-genre"></div>
+            <button class="swiper-button-next"></button>
+            <button class="swiper-button-prev"></button>
+        </div>
+        
+    </div>
+    <!--MOVIES BY GENRE : SWIPER END-->
+
+
+
+    
+    <div class="last-container">
+        <div class="title">
+            <h1><span>BE</span>MOVIES</h1>
+        </div>
+        <div class="menu">
+            <ul class="list">
+                <li>SEARCH</li>
+                <li>LATEST</li>
+                <li>GENRES</li>
+                <li>REGISTER</li>
+                <li>SIGN IN</li>
+            </ul>
+        </div>
+        <div class="p">
+            <p>@2023 - All right reserved</p>
+        </div>
+    </div>
+</body>
 </html>
